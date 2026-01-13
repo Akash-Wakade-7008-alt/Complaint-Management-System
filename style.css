@@ -10,7 +10,7 @@ body {
   color: #0f172a;
 }
 
-/* UTILITIES */
+
 .container {
   width: 90%;
   max-width: 1200px;
@@ -40,7 +40,7 @@ body {
   color: #2563eb;
 }
 
-/* NAVBAR */
+
 .navbar {
   background: #fff;
   border-bottom: 1px solid #e5e7eb;
@@ -66,7 +66,7 @@ body {
   text-decoration: none;
 }
 
-/* HERO */
+
 .hero {
   text-align: center;
   padding: 80px 0;
@@ -102,7 +102,7 @@ body {
   gap: 16px;
 }
 
-/* STATS */
+
 .stats {
   background: #fff;
   padding: 40px 0;
@@ -118,7 +118,7 @@ body {
   color: #2563eb;
 }
 
-/* FEATURES */
+
 .features {
   padding: 80px 0;
   text-align: center;
@@ -148,7 +148,7 @@ body {
   margin-bottom: 12px;
 }
 
-/* HOW IT WORKS */
+
 .how-it-works {
   padding: 80px 0;
   text-align: center;
@@ -167,7 +167,7 @@ body {
   font-weight: 700;
 }
 
-/* CTA */
+
 .cta {
   padding: 80px 0;
 }
@@ -180,7 +180,7 @@ body {
   color: #fff;
 }
 
-/* FOOTER */
+
 .footer {
   background: #fff;
   padding: 20px 0;
@@ -193,7 +193,7 @@ body {
   align-items: center;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 900px) {
   .stats-grid,
   .feature-grid,
