@@ -1,0 +1,233 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+}
+
+header {
+  height: 7vh;
+  display: flex;
+}
+
+main {
+  display: flex;
+}
+
+#section-1 {
+  flex: 1;
+  height: 91vh;
+}
+
+#section-2 {
+  flex: 3;
+  height: 91vh;
+  overflow-y: auto;
+}
+
+.dashboard {
+  display: flex;
+  margin-left: 1vw;
+  background-color: rgb(36, 106, 219);
+  justify-content: start;
+  align-items: center;
+  height: 6.5vh;
+  width: 20vw;
+  border-radius: 12px;
+  border: none;
+  margin-top: 4vh;
+  margin-left: 0.3vw;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+#dashboard-img {
+  height: 4.5vh;
+  margin-top: 0.5vh;
+  border-radius: 10px;
+}
+
+.Raise-Complaint {
+  display: flex;
+  margin-left: 1vw;
+  cursor: pointer;
+  margin-left: 0.3vw;
+}
+
+#Raise-Complaint-img {
+  height: 4.5vh;
+  margin-top: 2vh;
+}
+
+.My-Complaint {
+  display: flex;
+  margin-top: -1vh;
+  margin-left: 1vw;
+  cursor: pointer;
+  margin-left: 0.3vw;
+  text-decoration: none;
+  color: black;
+}
+
+#My-Complaint-img {
+  height: 4.5vh;
+  margin-top: 2vh;
+}
+
+.Resident-img {
+  height: 6vh;
+  margin-top: 4.8vh;
+  border-radius: 10px;
+}
+
+.log-out {
+  height: 2vh;
+}
+
+.complaint-btn {
+  background-color: rgb(36, 106, 219);
+  border: none;
+  color: rgb(255, 255, 255);
+  height: 6vh;
+  width: 15vw;
+  font-size: 18px;
+  border-radius: 8px;
+  display: flex;
+  margin-top: 6vh;
+  margin-right: 2vw;
+  cursor: pointer;
+}
+
+.Raise-Complaint-img-blue {
+  height: 5vh;
+  margin-top: 0.6vh;
+}
+
+.complaint-status {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5vh;
+  margin-top: 10vh;
+}
+
+.complaint-status-card {
+  width: 30vw;
+  border-radius: 8px;
+  color: rgb(238, 242, 246);
+}
+
+.My-Complaint-blue-img {
+  height: 6vh;
+  float: right;
+  margin-top: 5vh;
+  margin-right: 2vw;
+}
+
+.pending-img {
+  height: 6vh;
+  float: right;
+  margin-top: 5vh;
+  margin-right: 2vw;
+  border-radius: 10px;
+}
+
+.In-Progress-img {
+  height: 6vh;
+  float: right;
+  margin-top: 5vh;
+  margin-right: 2vw;
+  border-radius: 10px;
+}
+
+.Resolved-img {
+  height: 6vh;
+  float: right;
+  margin-top: 5vh;
+  margin-right: 2vw;
+  border-radius: 10px;
+}
+
+.card-1 {
+  border: 1px solid rgb(95, 119, 225);
+  width: 30vw;
+  border-radius: 8px;
+  border: 1px solid rgb(95, 119, 225);
+  margin-left: 4vw;
+  cursor: pointer;
+}
+
+.card-2 {
+  background-color: rgb(248, 189, 112);
+  border: 1px solid rgb(248, 189, 112);
+  cursor: pointer;
+}
+
+.card-3 {
+  background-color: rgb(105, 191, 244);
+  border: 1px solid rgb(105, 191, 244);
+  margin-left: 4vw;
+  cursor: pointer;
+}
+
+.card-4 {
+  background-color: rgb(117, 219, 172);
+  border: 1px solid rgb(117, 219, 172);
+  cursor: pointer;
+}
+
+.view-all-btn {
+  color: rgb(252, 253, 255);
+  background-color: rgb(36, 106, 219);
+  border: none;
+  height: 6vh;
+  width: 8vw;
+  border-radius: 5px;
+  margin-top: 12vh;
+  margin-right: 7vw;
+  cursor: pointer;
+}
+
+
+
+.Resent-Complaints {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.In-Progress-2 {
+  margin-left: 0.5vw;
+}
+
+.Resloved-2 {
+  margin-left: 0.5vw;
+}
+
+
+.pending-2-img {
+  height: 10vh;
+
+}
+
+.In-Progress-2-img {
+  height: 8vh
+}
+
+.Resolved-2-img {
+  height: 7vh;
+}
+
+.need-help-div {}
+
+.Quick-Tip-div {
+  background-color: rgb(36, 106, 219);
+  color: rgb(253, 254, 255);
+  padding: 10px;
+  height: 20vh;
+  border-radius: 10px;
+  width: 40vw;
+}
+
+footer {
+  display: flex;
+  gap: 5vw;
+  margin-top: 10vh;
+}
