@@ -2,120 +2,247 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>PG Complaints</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complaint Form</title>
 
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="query-form.css" />
   </head>
   <body>
-
     <header>
       <img src="pg logo.png" alt="Pg-logo" style="height: 8vh;margin-top: 1vh;margin-left: 1vw;">
- <h2 style="margin-left: 1vw;margin-top: 2.7vh;">Trident PG Complaint</h2>
-<img src="notification-img.png" alt="nitification-img" style="height: 6vh;margin-left: 70vw;margin-top: 0.7vh;cursor: pointer;">
-
+      <h2 style="margin-left: 1vw;margin-top: 2.7vh;">Trident PG Complaint</h2>
+      <img src="notification-img.png" alt="notification-img" style="height: 6vh;margin-left: 70vw;margin-top: 0.7vh;cursor: pointer;">
     </header>
+
     <main>
-      <div
-        class="section-1"
-        style="flex: 1; margin-top: 7vh; height: 90vh; overflow-y: hidden"
-      >
-        <a
-          href="main-interface.html"
-          target="_blank"
-          style="text-decoration: none"
-        >
+      <div class="section-1" style="flex: 1; margin-top: 7vh; height: 90vh; overflow-y: hidden">
+        <a href="main-interface.html" target="_blank" style="text-decoration: none">
           <div class="dashboard">
             <img src="dashboard-img.png" alt="dashboard" id="dashboard-img" />
-            <p style="margin-top: 3vh; margin-left: 0.5vw; font-size: large">
-              Dashboard
-            </p>
+            <p style="margin-top: 3vh; margin-left: 0.5vw; font-size: large">Dashboard</p>
           </div>
         </a>
 
         <div class="Raise-Complaint">
-          <img
-            src="Raise-Complaint-Blue.png"
-            alt="Raise-Complait"
-            id="Raise-Complaint-img"
-          />
-          <p style="margin-top: 1.5vh; margin-left: 0.3vw; font-size: large">
-            Raise Complaint
-          </p>
+          <img src="Raise-Complaint-Blue.png" alt="Raise-Complaint" id="Raise-Complaint-img" />
+          <p style="margin-top: 1.5vh; margin-left: 0.3vw; font-size: large">Raise Complaint</p>
         </div>
 
         <a href="my-complaints.html" class="My-Complaint" target="_blank">
-          <img
-            src="my-complaint-img.png"
-            alt="My-Complint"
-            id="My-Complaint-img"
-          />
-          <p style="margin-top: 3vh; margin-left: 0.5vw; font-size: large">
-            My Complaint
-          </p>
+          <img src="my-complaint-img.png" alt="My-Complaint" id="My-Complaint-img" />
+          <p style="margin-top: 3vh; margin-left: 0.5vw; font-size: large">My Complaint</p>
         </a>
 
         <div style="display: flex; margin-top: 46vh; margin-left: 2vw">
           <img src="Resident.png" alt="Resident" class="Resident-img" />
-          <div >
-            <p
-              style="
-                font-size: 12px;
-                height: 2px;
-                margin-top: 5vh;
-                margin-left: 1vw;
-              "
-            >
-              Yash
-            </p>
+          <div>
+            <p style="font-size: 12px; height: 2px; margin-top: 5vh; margin-left: 1vw;">Yash</p>
             <p style="font-size: 12px; margin-left: 1vw;margin-top: 2vh;">resident</p>
           </div>
         </div>
 
-       <a href="index.html" target="_blank" style="text-decoration: none;color: black;">
-         <div style="display: flex; margin-left: 1vw">
-          <img src="Logout.png" alt="log-out" clas="log-out" style="margin-left: 0.5vw;" />
-          <p style="font-size: small; margin-top: 3vh">Logout</p>
-        </div>
-       </a>
+        <a href="index.html" target="_blank" style="text-decoration: none;color: black;">
+          <div style="display: flex; margin-left: 1vw">
+            <img src="Logout.png" alt="log-out" class="log-out" style="margin-left: 0.5vw;" />
+            <p style="font-size: small; margin-top: 3vh">Logout</p>
+          </div>
+        </a>
       </div>
 
       <div class="section-2" style="flex: 3; overflow-y: auto; height: 98vh">
         <a href="my-complaints.html" target="_blank" style="text-decoration: none;color: black;">
-            <div class="topbar">
-          <span>← Back</span>
-        </div>
+          <div class="topbar">
+            <span>← Back</span>
+          </div>
         </a>
 
         <div class="form-card">
           <h1>Raise a Complaint</h1>
-          <p class="subtitle">
-            Fill out the form below to submit your complaint
-          </p>
+          <p class="subtitle">Fill out the form below to submit your complaint</p>
 
-          <label>Category *</label>
-          <select>
-            <option>Select a category</option>
-          </select>
+          <!-- ✅ FORM -->
+          <form id="complaintForm" novalidate>
+            <label for="category">Category *</label>
+            <select id="category" required>
+              <option value="" selected disabled>Select a category</option>
+              <option value="Food">Food</option>
+              <option value="Cleaning">Cleaning</option>
+              <option value="Electricity">Electricity</option>
+              <option value="Water">Water</option>
+              <option value="Internet">Internet</option>
+              <option value="Other">Other</option>
+            </select>
 
-          <label>Complaint Title *</label>
-          <input type="text" placeholder="Brief title for your complaint" />
+            <label for="title">Complaint Title *</label>
+            <input id="title" type="text" placeholder="Brief title for your complaint" required />
 
-          <label>Description *</label>
-          <textarea placeholder="Describe your issue in detail..."></textarea>
+            <label for="desc">Description *</label>
+            <textarea id="desc" placeholder="Describe your issue in detail..." required></textarea>
 
-          <label>Attach Image (Optional)</label>
-          <div class="upload-box">
-            Click to upload or drag and drop<br />
-            <small>PNG, JPG up to 5MB</small>
-          </div>
+            <label>Attach Image (Optional)</label>
 
-          <div class="buttons">
-            <button class="cancel">Cancel</button>
-            <button class="submit">Submit Complaint</button>
-          </div>
+            <!-- ✅ Hidden file input -->
+            <input
+              id="imageInput"
+              type="file"
+              accept="image/png, image/jpeg"
+              hidden
+            />
+
+            <!-- ✅ Upload box (click + drag drop) -->
+            <div id="uploadBox" class="upload-box" role="button" tabindex="0">
+              <div>
+                Click to upload or drag and drop<br />
+                <small>PNG, JPG up to 5MB</small>
+              </div>
+              <div id="fileInfo" class="file-info"></div>
+            </div>
+
+            <p id="errorMsg" class="error-msg"></p>
+
+            <div class="buttons">
+              <button type="button" class="cancel" id="cancelBtn">Cancel</button>
+              <button type="submit" class="submit">Submit Complaint</button>
+            </div>
+          </form>
         </div>
       </div>
     </main>
+
+    <script>
+      const form = document.getElementById("complaintForm");
+      const categoryEl = document.getElementById("category");
+      const titleEl = document.getElementById("title");
+      const descEl = document.getElementById("desc");
+
+      const uploadBox = document.getElementById("uploadBox");
+      const imageInput = document.getElementById("imageInput");
+      const fileInfo = document.getElementById("fileInfo");
+      const errorMsg = document.getElementById("errorMsg");
+      const cancelBtn = document.getElementById("cancelBtn");
+
+      let selectedImageDataUrl = ""; // will store base64 image for showing later
+      let selectedImageName = "";
+
+      function setError(msg) {
+        errorMsg.textContent = msg || "";
+      }
+
+      function validateFile(file) {
+        if (!file) return true;
+
+        const isValidType = file.type === "image/png" || file.type === "image/jpeg";
+        if (!isValidType) {
+          setError("Only PNG or JPG images are allowed.");
+          return false;
+        }
+
+        const maxSize = 5 * 1024 * 1024; // 5MB
+        if (file.size > maxSize) {
+          setError("Image must be 5MB or smaller.");
+          return false;
+        }
+
+        return true;
+      }
+
+      function readFileAsDataURL(file) {
+        return new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.onload = () => resolve(reader.result);
+          reader.onerror = reject;
+          reader.readAsDataURL(file);
+        });
+      }
+
+      async function handleFile(file) {
+        setError("");
+
+        if (!validateFile(file)) {
+          selectedImageDataUrl = "";
+          selectedImageName = "";
+          fileInfo.textContent = "";
+          return;
+        }
+
+        selectedImageName = file.name;
+        fileInfo.textContent = `Selected: ${file.name}`;
+        selectedImageDataUrl = await readFileAsDataURL(file);
+      }
+
+      // Click upload box => open file picker
+      uploadBox.addEventListener("click", () => imageInput.click());
+      uploadBox.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") imageInput.click();
+      });
+
+      // File picker change
+      imageInput.addEventListener("change", async () => {
+        const file = imageInput.files[0];
+        await handleFile(file);
+      });
+
+      // Drag and drop
+      uploadBox.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        uploadBox.classList.add("dragover");
+      });
+
+      uploadBox.addEventListener("dragleave", () => {
+        uploadBox.classList.remove("dragover");
+      });
+
+      uploadBox.addEventListener("drop", async (e) => {
+        e.preventDefault();
+        uploadBox.classList.remove("dragover");
+        const file = e.dataTransfer.files[0];
+        await handleFile(file);
+      });
+
+      // Cancel -> clear form
+      cancelBtn.addEventListener("click", () => {
+        form.reset();
+        selectedImageDataUrl = "";
+        selectedImageName = "";
+        fileInfo.textContent = "";
+        setError("");
+      });
+
+      // Submit -> save in localStorage -> go to my-complaints.html
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        setError("");
+
+        // browser validation
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+
+        // Create complaint object
+        const complaints = JSON.parse(localStorage.getItem("complaints") || "[]");
+
+        const nextNumber = complaints.length + 1;
+        const complaintId = `CMP-${String(nextNumber).padStart(3, "0")}`;
+
+        const complaintObj = {
+          id: complaintId,
+          status: "Pending",
+          category: categoryEl.value,
+          title: titleEl.value.trim(),
+          description: descEl.value.trim(),
+          date: new Date().toISOString(),
+          imageName: selectedImageName,
+          imageDataUrl: selectedImageDataUrl
+        };
+
+        complaints.unshift(complaintObj); // add as newest first
+        localStorage.setItem("complaints", JSON.stringify(complaints));
+
+        // go to complaints page
+        window.location.href = "my-complaints.html";
+      });
+    </script>
   </body>
 </html>

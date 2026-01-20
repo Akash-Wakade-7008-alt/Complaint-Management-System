@@ -1,4 +1,4 @@
-
+// ------------------ DATA ------------------
 const complaints = [
   {
     id: "CMP-001",
@@ -7,7 +7,7 @@ const complaints = [
     desc: "The water heater in my bathroom stopped working yesterday. No hot water available.",
     date: "Jan 8, 2024",
     category: "Water",
-    icon: "🚿"
+    icon: "🚿",
   },
   {
     id: "CMP-002",
@@ -16,7 +16,7 @@ const complaints = [
     desc: "WiFi keeps disconnecting every few minutes. Very slow speeds when connected.",
     date: "Jan 7, 2024",
     category: "Internet",
-    icon: "📶"
+    icon: "📶",
   },
   {
     id: "CMP-003",
@@ -25,7 +25,7 @@ const complaints = [
     desc: "The cleaning staff did not clean my room today as scheduled.",
     date: "Jan 5, 2024",
     category: "Cleaning",
-    icon: "🧹"
+    icon: "🧹",
   },
   {
     id: "CMP-004",
@@ -34,7 +34,7 @@ const complaints = [
     desc: "The main light bulb in the study corner has stopped working.",
     date: "Jan 3, 2024",
     category: "Electricity",
-    icon: "💡"
+    icon: "💡",
   },
   {
     id: "CMP-005",
@@ -43,7 +43,7 @@ const complaints = [
     desc: "The dinner served yesterday was cold and not properly cooked.",
     date: "Jan 2, 2024",
     category: "Food",
-    icon: "🍲"
+    icon: "🍲",
   },
   {
     id: "CMP-006",
@@ -52,10 +52,11 @@ const complaints = [
     desc: "The air conditioner is making a very loud rattling noise.",
     date: "Dec 28, 2023",
     category: "Other",
-    icon: "🧰"
-  }
+    icon: "🧰",
+  },
 ];
 
+// ------------------ DOM ------------------
 const cardsContainer = document.getElementById("cardsContainer");
 const footerText = document.getElementById("footerText");
 
@@ -69,7 +70,17 @@ const categoryMenu = document.getElementById("categoryMenu");
 let selectedStatus = "all";
 let selectedCategory = "all";
 
-// ------- dropdown open/close -------
+// ------------------ REDIRECT MAP ------------------
+const pageMap = {
+  "CMP-001": "complaint-1.html",
+  "CMP-002": "complaint-2.html",
+  "CMP-003": "complaint-3.html",
+  "CMP-004": "complaint-4.html",
+  "CMP-005": "complaint-5.html",
+  // CMP-006 intentionally not mapped (no redirect)
+};
+
+// ------------------ DROPDOWN OPEN/CLOSE ------------------
 statusBtn.addEventListener("click", () => {
   toggleMenu(statusMenu);
   categoryMenu.style.display = "none";
@@ -81,20 +92,22 @@ categoryBtn.addEventListener("click", () => {
 });
 
 function toggleMenu(menu) {
-  menu.style.display = (menu.style.display === "block") ? "none" : "block";
+  menu.style.display = menu.style.display === "block" ? "none" : "block";
 }
 
 // close menus when clicking outside
 document.addEventListener("click", (e) => {
-  const clickedInsideStatus = statusBtn.contains(e.target) || statusMenu.contains(e.target);
-  const clickedInsideCategory = categoryBtn.contains(e.target) || categoryMenu.contains(e.target);
+  const clickedInsideStatus =
+    statusBtn.contains(e.target) || statusMenu.contains(e.target);
+  const clickedInsideCategory =
+    categoryBtn.contains(e.target) || categoryMenu.contains(e.target);
 
   if (!clickedInsideStatus) statusMenu.style.display = "none";
   if (!clickedInsideCategory) categoryMenu.style.display = "none";
 });
 
-// ------- menu options -------
-statusMenu.querySelectorAll(".option").forEach(opt => {
+// ------------------ MENU OPTIONS ------------------
+statusMenu.querySelectorAll(".option").forEach((opt) => {
   opt.addEventListener("click", () => {
     selectedStatus = opt.dataset.value; // all / pending / in progress / resolved
     statusBtn.textContent = opt.textContent + " ▾";
@@ -103,7 +116,7 @@ statusMenu.querySelectorAll(".option").forEach(opt => {
   });
 });
 
-categoryMenu.querySelectorAll(".option").forEach(opt => {
+categoryMenu.querySelectorAll(".option").forEach((opt) => {
   opt.addEventListener("click", () => {
     selectedCategory = opt.dataset.value; // all / food / cleaning / ...
     categoryBtn.textContent = opt.textContent + " ▾";
@@ -112,10 +125,10 @@ categoryMenu.querySelectorAll(".option").forEach(opt => {
   });
 });
 
-// ------- search -------
+// ------------------ SEARCH ------------------
 searchInput.addEventListener("input", renderCards);
 
-// ------- render cards -------
+// ------------------ HELPERS ------------------
 function getStatusClass(statusText) {
   const s = statusText.toLowerCase();
   if (s === "pending") return "status-pending";
@@ -123,12 +136,17 @@ function getStatusClass(statusText) {
   return "status-resolved";
 }
 
+// ------------------ RENDER CARDS ------------------
 function renderCards() {
   const search = searchInput.value.trim().toLowerCase();
 
-  const filtered = complaints.filter(c => {
-    const statusOk = (selectedStatus === "all") || (c.status.toLowerCase() === selectedStatus);
-    const catOk = (selectedCategory === "all") || (c.category.toLowerCase() === selectedCategory);
+  const filtered = complaints.filter((c) => {
+    const statusOk =
+      selectedStatus === "all" || c.status.toLowerCase() === selectedStatus;
+
+    const catOk =
+      selectedCategory === "all" ||
+      c.category.toLowerCase() === selectedCategory;
 
     const searchOk =
       c.title.toLowerCase().includes(search) ||
@@ -139,7 +157,7 @@ function renderCards() {
 
   cardsContainer.innerHTML = "";
 
-  filtered.forEach(c => {
+  filtered.forEach((c) => {
     const card = document.createElement("div");
     card.className = "card";
 
@@ -165,6 +183,15 @@ function renderCards() {
 
       <div class="arrow">→</div>
     `;
+
+    // ✅ CLICK REDIRECT ONLY FOR CMP-001 to CMP-005
+    if (pageMap[c.id]) {
+      card.style.cursor = "pointer";
+      card.title = "Click to view complaint details";
+      card.addEventListener("click", () => {
+        window.location.href = pageMap[c.id];
+      });
+    }
 
     cardsContainer.appendChild(card);
   });

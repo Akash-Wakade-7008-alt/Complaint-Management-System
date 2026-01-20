@@ -149,3 +149,29 @@ input:focus {
     text-decoration: none;
     font-weight: 500;
 }
+
+/* Make the eye button look nice */
+.eye {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 0.75;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    padding: 4px;
+}
+
+.eye:hover {
+    opacity: 1;
+}
+
+/* Error message style */
+.error-msg {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #dc2626;
+    min-height: 18px; 
+}

@@ -190,21 +190,27 @@ main {
 .Resent-Complaints {
   display: flex;
   flex-direction: column;
-  gap: 5vh;
+
 }
 
 .In-Progress-2 {
   margin-left: 0.5vw;
+  margin-top: 4vh;
 }
 
 .Resloved-2 {
   margin-left: 0.5vw;
+  margin-top: 4vh;
 }
 
 
 .pending-2-img {
   height: 10vh;
 
+}
+
+.pending-2{
+  margin-top: 2vh;
 }
 
 .In-Progress-2-img {

@@ -85,7 +85,7 @@ main {
 }
 
 .log-out {
-  height: 2vh;
+  height: 8vh;
 }
 
 .sidebar {
@@ -224,4 +224,27 @@ textarea {
   border: none;
   background: #2563eb;
   color: white;
+}
+
+.upload-box {
+  cursor: pointer;
+  user-select: none;
+}
+
+.upload-box.dragover {
+  border-color: #2563eb;
+  background: #f3f7ff;
+}
+
+.file-info {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #111;
+}
+
+.error-msg {
+  margin-top: 12px;
+  color: #dc2626;
+  font-size: 14px;
+  min-height: 18px;
 }
