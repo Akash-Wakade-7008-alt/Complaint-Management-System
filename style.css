@@ -10,7 +10,6 @@ body {
   color: #0f172a;
 }
 
-
 .container {
   width: 90%;
   max-width: 1200px;
@@ -41,7 +40,6 @@ body {
   margin-top: 2vh;
 }
 
-
 .navbar {
   background: #fff;
   border-bottom: 1px solid #e5e7eb;
@@ -66,7 +64,6 @@ body {
   color: #475569;
   text-decoration: none;
 }
-
 
 .hero {
   text-align: center;
@@ -103,7 +100,6 @@ body {
   gap: 16px;
 }
 
-
 .stats {
   background: #fff;
   padding: 40px 0;
@@ -118,7 +114,6 @@ body {
 .stat h2 {
   color: #2563eb;
 }
-
 
 .features {
   padding: 80px 0;
@@ -141,14 +136,13 @@ body {
   background: #fff;
   padding: 30px;
   border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
 }
 
 .icon {
   font-size: 26px;
   margin-bottom: 12px;
 }
-
 
 .how-it-works {
   padding: 80px 0;
@@ -168,7 +162,6 @@ body {
   font-weight: 700;
 }
 
-
 .cta {
   padding: 80px 0;
 }
@@ -181,7 +174,6 @@ body {
   color: #fff;
 }
 
-
 .footer {
   background: #fff;
   padding: 20px 0;
@@ -193,7 +185,6 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
 
 @media (max-width: 900px) {
   .stats-grid,

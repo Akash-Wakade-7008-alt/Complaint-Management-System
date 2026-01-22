@@ -1,127 +1,155 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up Page</title>
-    <link rel="stylesheet" href="create-account.css">
-</head>
-<body>
-
-<header class="top-bar">
-    <div class="logo">
+    <link rel="stylesheet" href="create-account.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <div class="logo">
         <span class="logo-icon">
-            <img src="pg logo.png" alt="Pg-logo" style="height: 8vh;">
+          <img src="pg logo.png" alt="Pg-logo" style="height: 8vh" />
         </span>
         <span class="logo-text">Trident PG Complaints</span>
-    </div>
-</header>
+      </div>
+    </header>
 
-<main class="container">
-    <div class="card">
+    <main class="container">
+      <div class="card">
         <div class="icon-box">
-            <img src="pg logo.png" alt="Pg-logo" style="height: 8vh;">
+          <img src="pg logo.png" alt="Pg-logo" style="height: 8vh" />
         </div>
 
         <h2>Create Account</h2>
         <p class="subtitle">Register to start managing your complaints</p>
 
-        <!-- ✅ use form with id -->
         <form id="registerForm" novalidate>
-            <label for="fullName">Full Name</label>
-            <input id="fullName" name="fullName" type="text" placeholder="Your Name" required>
+          <label for="fullName">Full Name</label>
+          <input
+            id="fullName"
+            name="fullName"
+            type="text"
+            placeholder="Your Name"
+            required
+          />
 
-            <label for="email">Email Address</label>
-            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          <label for="email">Email Address</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            required
+          />
 
-            <label for="room">Room Number</label>
-            <input id="room" name="room" type="text" placeholder="e.g., A-101" required>
+          <label for="room">Room Number</label>
+          <input
+            id="room"
+            name="room"
+            type="text"
+            placeholder="e.g., A-101"
+            required
+          />
 
-            <label for="password">Password</label>
-            <div class="password-box">
-                <input id="password" name="password" type="password" placeholder="Create a password" required minlength="6">
-                <button type="button" class="eye" id="togglePassword" aria-label="Show/Hide Password">👁</button>
-            </div>
+          <label for="password">Password</label>
+          <div class="password-box">
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Create a password"
+              required
+              minlength="6"
+            />
+            <button
+              type="button"
+              class="eye"
+              id="togglePassword"
+              aria-label="Show/Hide Password"
+            >
+              👁
+            </button>
+          </div>
 
-            <label for="confirmPassword">Confirm Password</label>
-            <input id="confirmPassword" name="confirmPassword" type="password" placeholder="Confirm your password" required minlength="6">
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            id="confirmPassword"
+            name="confirmPassword"
+            type="password"
+            placeholder="Confirm your password"
+            required
+            minlength="6"
+          />
 
-            <div class="terms">
-                <input type="checkbox" id="terms" required>
-                <label for="terms">
-                    I agree to the
-                    <a href="#">Terms of Service</a>
-                    and
-                    <a href="#">Privacy Policy</a>
-                </label>
-            </div>
+          <div class="terms">
+            <input type="checkbox" id="terms" required />
+            <label for="terms">
+              I agree to the
+              <a href="#">Terms of Service</a>
+              and
+              <a href="#">Privacy Policy</a>
+            </label>
+          </div>
 
-            <!-- ✅ error message area -->
-            <p id="errorMsg" class="error-msg" aria-live="polite"></p>
+          <p id="errorMsg" class="error-msg" aria-live="polite"></p>
 
-            <!-- ✅ REAL submit button -->
-            <button type="submit" class="btn-primary">Create Account</button>
+          <button type="submit" class="btn-primary">Create Account</button>
         </form>
 
         <p class="signin-text">
-            Already have an account?
-            <a href="#">Sign in</a>
+          Already have an account?
+          <a href="#">Sign in</a>
         </p>
-    </div>
-</main>
+      </div>
+    </main>
 
-<!-- ✅ JS for validation + password toggle -->
-<script>
-    const form = document.getElementById("registerForm");
-    const passwordInput = document.getElementById("password");
-    const confirmPasswordInput = document.getElementById("confirmPassword");
-    const toggleBtn = document.getElementById("togglePassword");
-    const errorMsg = document.getElementById("errorMsg");
-    const emailInput = document.getElementById("email");
+    <script>
+      const form = document.getElementById("registerForm");
+      const passwordInput = document.getElementById("password");
+      const confirmPasswordInput = document.getElementById("confirmPassword");
+      const toggleBtn = document.getElementById("togglePassword");
+      const errorMsg = document.getElementById("errorMsg");
+      const emailInput = document.getElementById("email");
 
-    // ✅ Show/Hide password
-    toggleBtn.addEventListener("click", () => {
+      toggleBtn.addEventListener("click", () => {
         const isHidden = passwordInput.type === "password";
         passwordInput.type = isHidden ? "text" : "password";
         confirmPasswordInput.type = isHidden ? "text" : "password";
-    });
+      });
 
-    // ✅ simple email format check (extra safety)
-    function isValidEmail(email) {
+      function isValidEmail(email) {
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
-    }
+      }
 
-    form.addEventListener("submit", (e) => {
+      form.addEventListener("submit", (e) => {
         errorMsg.textContent = "";
 
-        // 1) built-in HTML validation
         if (!form.checkValidity()) {
-            e.preventDefault();
-            form.reportValidity();
-            return;
+          e.preventDefault();
+          form.reportValidity();
+          return;
         }
 
-        // 2) extra email format check
         if (!isValidEmail(emailInput.value)) {
-            e.preventDefault();
-            errorMsg.textContent = "Please enter a valid email address (example: name@gmail.com).";
-            emailInput.focus();
-            return;
+          e.preventDefault();
+          errorMsg.textContent =
+            "Please enter a valid email address (example: name@gmail.com).";
+          emailInput.focus();
+          return;
         }
 
-        // 3) password match check
         if (passwordInput.value !== confirmPasswordInput.value) {
-            e.preventDefault();
-            errorMsg.textContent = "Password and Confirm Password do not match.";
-            confirmPasswordInput.focus();
-            return;
+          e.preventDefault();
+          errorMsg.textContent = "Password and Confirm Password do not match.";
+          confirmPasswordInput.focus();
+          return;
         }
 
-        // ✅ if everything is correct, go to next page
         e.preventDefault();
         window.location.href = "main-interface.html";
-    });
-</script>
-
-</body>
+      });
+    </script>
+  </body>
 </html>

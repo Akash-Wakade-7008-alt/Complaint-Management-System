@@ -39,6 +39,7 @@ main {
   cursor: pointer;
 }
 
+
 #dashboard-img {
   height: 4.5vh;
   margin-top: 0.5vh;
@@ -152,12 +153,29 @@ main {
   border: 1px solid rgb(95, 119, 225);
   margin-left: 4vw;
   cursor: pointer;
+  transform: scale(1);
+  transition:transform 1s ease;
+  transform-origin: center
 }
+
+
+.card-1:hover{
+  transform: scale(1.1);
+}
+
 
 .card-2 {
   background-color: rgb(248, 189, 112);
   border: 1px solid rgb(248, 189, 112);
   cursor: pointer;
+    transform: scale(1);
+  transition:transform 1s ease;
+  transform-origin: center
+
+}
+
+.card-2:hover{
+  transform: scale(1.1);
 }
 
 .card-3 {
@@ -165,12 +183,28 @@ main {
   border: 1px solid rgb(105, 191, 244);
   margin-left: 4vw;
   cursor: pointer;
+ transform: scale(1);
+  transition:transform 1s ease;
+  transform-origin: center
+
+}
+
+.card-3:hover{
+  transform: scale(1.1);
 }
 
 .card-4 {
   background-color: rgb(117, 219, 172);
   border: 1px solid rgb(117, 219, 172);
   cursor: pointer;
+ transform: scale(1);
+  transition:transform 1s ease;
+  transform-origin: center
+
+}
+
+.card-4:hover{
+  transform: scale(1.1);
 }
 
 .view-all-btn {
@@ -185,12 +219,9 @@ main {
   cursor: pointer;
 }
 
-
-
 .Resent-Complaints {
   display: flex;
   flex-direction: column;
-
 }
 
 .In-Progress-2 {
@@ -203,25 +234,24 @@ main {
   margin-top: 4vh;
 }
 
-
 .pending-2-img {
   height: 10vh;
-
 }
 
-.pending-2{
+.pending-2 {
   margin-top: 2vh;
 }
 
 .In-Progress-2-img {
-  height: 8vh
+  height: 8vh;
 }
 
 .Resolved-2-img {
   height: 7vh;
 }
 
-.need-help-div {}
+.need-help-div {
+}
 
 .Quick-Tip-div {
   background-color: rgb(36, 106, 219);

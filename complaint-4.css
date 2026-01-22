@@ -37,7 +37,6 @@ body {
   overflow: hidden;
 }
 
-/* Left big card */
 .head {
   display: flex;
   gap: 14px;
@@ -123,7 +122,6 @@ body {
   line-height: 1.65;
 }
 
-/* Admin response card */
 .admin-title {
   display: flex;
   align-items: center;
@@ -184,7 +182,6 @@ body {
   line-height: 1.65;
 }
 
-/* Timeline card (right) */
 .timeline-title {
   padding: 16px 18px;
   border-bottom: 1px solid #f0f0f0;
@@ -242,16 +239,15 @@ body {
   color: #6b7280;
 }
 
-/* last item line hidden */
 .t-item.last .line {
   background: transparent;
 }
 
-/* future (not completed) example */
 .t-item.future .dot {
   background: #e5e7eb;
   border-color: #e5e7eb;
 }
+
 .t-item.future .t-name {
   color: #9ca3af;
 }

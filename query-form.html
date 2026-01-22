@@ -61,7 +61,7 @@
           <h1>Raise a Complaint</h1>
           <p class="subtitle">Fill out the form below to submit your complaint</p>
 
-          <!-- ✅ FORM -->
+  
           <form id="complaintForm" novalidate>
             <label for="category">Category *</label>
             <select id="category" required>
@@ -82,7 +82,7 @@
 
             <label>Attach Image (Optional)</label>
 
-            <!-- ✅ Hidden file input -->
+        
             <input
               id="imageInput"
               type="file"
@@ -90,7 +90,7 @@
               hidden
             />
 
-            <!-- ✅ Upload box (click + drag drop) -->
+   
             <div id="uploadBox" class="upload-box" role="button" tabindex="0">
               <div>
                 Click to upload or drag and drop<br />
@@ -122,7 +122,7 @@
       const errorMsg = document.getElementById("errorMsg");
       const cancelBtn = document.getElementById("cancelBtn");
 
-      let selectedImageDataUrl = ""; // will store base64 image for showing later
+      let selectedImageDataUrl = ""; 
       let selectedImageName = "";
 
       function setError(msg) {
@@ -138,7 +138,7 @@
           return false;
         }
 
-        const maxSize = 5 * 1024 * 1024; // 5MB
+        const maxSize = 5 * 1024 * 1024; 
         if (file.size > maxSize) {
           setError("Image must be 5MB or smaller.");
           return false;
@@ -209,7 +209,7 @@
         setError("");
       });
 
-      // Submit -> save in localStorage -> go to my-complaints.html
+      // Submit-> go to my-complaints.html
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         setError("");
@@ -237,7 +237,7 @@
           imageDataUrl: selectedImageDataUrl
         };
 
-        complaints.unshift(complaintObj); // add as newest first
+        complaints.unshift(complaintObj); 
         localStorage.setItem("complaints", JSON.stringify(complaints));
 
         // go to complaints page

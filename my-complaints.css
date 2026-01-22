@@ -74,7 +74,7 @@ main {
   margin-left: 0.7vw;
 }
 
-/* RIGHT SIDE UI */
+
 .page-title {
   display: flex;
   justify-content: space-between;
@@ -172,7 +172,7 @@ main {
   background: #f3f7ff;
 }
 
-/* Cards */
+
 .cards {
   display: flex;
   flex-direction: column;
