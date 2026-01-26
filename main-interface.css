@@ -39,7 +39,6 @@ main {
   cursor: pointer;
 }
 
-
 #dashboard-img {
   height: 4.5vh;
   margin-top: 0.5vh;
@@ -153,29 +152,28 @@ main {
   border: 1px solid rgb(95, 119, 225);
   margin-left: 4vw;
   cursor: pointer;
-  transform: scale(1);
-  transition:transform 1s ease;
-  transform-origin: center
+  transform: scale(1) translateY(0px);
+
+  transition: transform 1s ease;
+  transform-origin: center;
 }
 
-
-.card-1:hover{
-  transform: scale(1.1);
+.card-1:hover {
+  transform: scale(1.1) translateY(-10px);
 }
-
 
 .card-2 {
   background-color: rgb(248, 189, 112);
   border: 1px solid rgb(248, 189, 112);
   cursor: pointer;
-    transform: scale(1);
-  transition:transform 1s ease;
-  transform-origin: center
+  transform: scale(1) translateY(0px);
 
+  transition: transform 1s ease;
+  transform-origin: center;
 }
 
-.card-2:hover{
-  transform: scale(1.1);
+.card-2:hover {
+  transform: scale(1.1) translateY(-10px);
 }
 
 .card-3 {
@@ -183,28 +181,26 @@ main {
   border: 1px solid rgb(105, 191, 244);
   margin-left: 4vw;
   cursor: pointer;
- transform: scale(1);
-  transition:transform 1s ease;
-  transform-origin: center
-
+  transform: scale(1) translateY(0px);
+  transition: transform 1s ease;
+  transform-origin: center;
 }
 
-.card-3:hover{
-  transform: scale(1.1);
+.card-3:hover {
+  transform: scale(1.1) translateY(-10px);
 }
 
 .card-4 {
   background-color: rgb(117, 219, 172);
   border: 1px solid rgb(117, 219, 172);
   cursor: pointer;
- transform: scale(1);
-  transition:transform 1s ease;
-  transform-origin: center
-
+  transform: scale(1) translateY(0px);
+  transition: transform 1s ease;
+  transform-origin: center;
 }
 
-.card-4:hover{
-  transform: scale(1.1);
+.card-4:hover {
+  transform: scale(1.1) translateY(-10px);
 }
 
 .view-all-btn {
@@ -214,7 +210,7 @@ main {
   height: 6vh;
   width: 8vw;
   border-radius: 5px;
-  margin-top: 12vh;
+  margin-top: 8vh;
   margin-right: 7vw;
   cursor: pointer;
 }
@@ -224,23 +220,46 @@ main {
   flex-direction: column;
 }
 
-.In-Progress-2 {
-  margin-left: 0.5vw;
-  margin-top: 4vh;
+.CMP-001{
+  margin-top: 2vh;
+  transform: scale(1) translateY(0px);
+  transition: transform 0.8s ease;
+  transform-origin: center;
 }
 
-.Resloved-2 {
+.CMP-001:hover{
+  transform: scale(1.035) translateY(-5px);
+}
+
+.CMP-002{
   margin-left: 0.5vw;
   margin-top: 4vh;
+  transform: scale(1) translateY(0px);
+  transition: transform 1s ease;
+  transform-origin: center;
+}
+
+.CMP-002:hover{
+  transform: scale(1.035) translateY(-5px);
+}
+
+.CMP-003{
+  margin-left: 0.5vw;
+  margin-top: 4vh;
+  transform: scale(1) translateY(0px);
+  transition: transform 1s ease;
+  transform-origin: center;
+}
+
+.CMP-003:hover{
+  transform: scale(1.035) translateY(-5px);
 }
 
 .pending-2-img {
   height: 10vh;
 }
 
-.pending-2 {
-  margin-top: 2vh;
-}
+
 
 .In-Progress-2-img {
   height: 8vh;
