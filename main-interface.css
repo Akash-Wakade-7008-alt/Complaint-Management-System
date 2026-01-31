@@ -220,18 +220,18 @@ main {
   flex-direction: column;
 }
 
-.CMP-001{
+.CMP-001 {
   margin-top: 2vh;
   transform: scale(1) translateY(0px);
   transition: transform 0.8s ease;
   transform-origin: center;
 }
 
-.CMP-001:hover{
+.CMP-001:hover {
   transform: scale(1.035) translateY(-5px);
 }
 
-.CMP-002{
+.CMP-002 {
   margin-left: 0.5vw;
   margin-top: 4vh;
   transform: scale(1) translateY(0px);
@@ -239,11 +239,11 @@ main {
   transform-origin: center;
 }
 
-.CMP-002:hover{
+.CMP-002:hover {
   transform: scale(1.035) translateY(-5px);
 }
 
-.CMP-003{
+.CMP-003 {
   margin-left: 0.5vw;
   margin-top: 4vh;
   transform: scale(1) translateY(0px);
@@ -251,15 +251,13 @@ main {
   transform-origin: center;
 }
 
-.CMP-003:hover{
+.CMP-003:hover {
   transform: scale(1.035) translateY(-5px);
 }
 
 .pending-2-img {
   height: 10vh;
 }
-
-
 
 .In-Progress-2-img {
   height: 8vh;
@@ -269,8 +267,7 @@ main {
   height: 7vh;
 }
 
-.need-help-div {
-}
+.need-help-div {}
 
 .Quick-Tip-div {
   background-color: rgb(36, 106, 219);
