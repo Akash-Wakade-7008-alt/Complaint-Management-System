@@ -171,19 +171,19 @@
         selectedImageDataUrl = await readFileAsDataURL(file);
       }
 
-      // Click upload box => open file picker
+      
       uploadBox.addEventListener("click", () => imageInput.click());
       uploadBox.addEventListener("keydown", (e) => {
         if (e.key === "Enter" || e.key === " ") imageInput.click();
       });
 
-      // File picker change
+      
       imageInput.addEventListener("change", async () => {
         const file = imageInput.files[0];
         await handleFile(file);
       });
 
-      // Drag and drop
+      
       uploadBox.addEventListener("dragover", (e) => {
         e.preventDefault();
         uploadBox.classList.add("dragover");
@@ -200,7 +200,7 @@
         await handleFile(file);
       });
 
-      // Cancel -> clear form
+      
       cancelBtn.addEventListener("click", () => {
         form.reset();
         selectedImageDataUrl = "";
@@ -209,18 +209,18 @@
         setError("");
       });
 
-      // Submit-> go to my-complaints.html
+      
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         setError("");
 
-        // browser validation
+        
         if (!form.checkValidity()) {
           form.reportValidity();
           return;
         }
 
-        // Create complaint object
+        
         const complaints = JSON.parse(localStorage.getItem("complaints") || "[]");
 
         const nextNumber = complaints.length + 1;
@@ -240,7 +240,7 @@
         complaints.unshift(complaintObj); 
         localStorage.setItem("complaints", JSON.stringify(complaints));
 
-        // go to complaints page
+      
         window.location.href = "my-complaints.html";
       });
     </script>
