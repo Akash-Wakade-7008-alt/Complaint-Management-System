@@ -10,7 +10,7 @@
     <header class="top-bar">
       <div class="logo">
         <span class="logo-icon">
-          <img src="pg logo.png" alt="Pg-logo" style="height: 8vh" />
+          <img src="images/pg logo.png" alt="Pg-logo" style="height: 8vh" />
         </span>
         <span class="logo-text">Trident PG Complaints</span>
       </div>
@@ -19,7 +19,7 @@
     <main class="container">
       <div class="card">
         <div class="icon-box">
-          <img src="pg logo.png" alt="Pg-logo" style="height: 8vh" />
+          <img src="images/pg logo.png" alt="Pg-logo" style="height: 8vh" />
         </div>
 
         <h2>Create Account</h2>
@@ -105,51 +105,6 @@
       </div>
     </main>
 
-    <script>
-      const form = document.getElementById("registerForm");
-      const passwordInput = document.getElementById("password");
-      const confirmPasswordInput = document.getElementById("confirmPassword");
-      const toggleBtn = document.getElementById("togglePassword");
-      const errorMsg = document.getElementById("errorMsg");
-      const emailInput = document.getElementById("email");
-
-      toggleBtn.addEventListener("click", () => {
-        const isHidden = passwordInput.type === "password";
-        passwordInput.type = isHidden ? "text" : "password";
-        confirmPasswordInput.type = isHidden ? "text" : "password";
-      });
-
-      function isValidEmail(email) {
-        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
-      }
-
-      form.addEventListener("submit", (e) => {
-        errorMsg.textContent = "";
-
-        if (!form.checkValidity()) {
-          e.preventDefault();
-          form.reportValidity();
-          return;
-        }
-
-        if (!isValidEmail(emailInput.value)) {
-          e.preventDefault();
-          errorMsg.textContent =
-            "Please enter a valid email address (example: name@gmail.com).";
-          emailInput.focus();
-          return;
-        }
-
-        if (passwordInput.value !== confirmPasswordInput.value) {
-          e.preventDefault();
-          errorMsg.textContent = "Password and Confirm Password do not match.";
-          confirmPasswordInput.focus();
-          return;
-        }
-
-        e.preventDefault();
-        window.location.href = "main-interface.html";
-      });
-    </script>
+    <script src="create-account.js"></script>
   </body>
 </html>

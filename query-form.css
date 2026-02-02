@@ -224,6 +224,7 @@ textarea {
   border: none;
   background: #2563eb;
   color: white;
+  cursor: pointer;
 }
 
 .upload-box {

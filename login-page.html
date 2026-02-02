@@ -9,7 +9,7 @@
     <header class="top-bar">
       <div class="logo">
         <div class="logo-icon">
-          <img src="pg logo.png" alt="Pg-logo" style="height: 8vh" />
+          <img src="images/pg logo.png" alt="Pg-logo" style="height: 8vh" />
         </div>
         <span>Trident PG Complaints</span>
       </div>
@@ -18,7 +18,7 @@
     <main class="container">
       <div class="card">
         <div class="icon-box">
-          <img src="pg logo.png" alt="Pg-log" style="height: 8vh" />
+          <img src="images/pg logo.png" alt="Pg-log" style="height: 8vh" />
         </div>
 
         <h2>Welcome Back</h2>
@@ -67,32 +67,6 @@
       </div>
     </main>
 
-    <script>
-      const loginForm = document.getElementById("loginForm");
-      const emailInput = document.getElementById("email");
-      const emailError = document.getElementById("emailError");
-
-      function isValidEmail(email) {
-        const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-        return pattern.test(email);
-      }
-
-      loginForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        const email = emailInput.value.trim();
-
-        if (!isValidEmail(email)) {
-          emailError.style.display = "block";
-          emailInput.style.borderColor = "red";
-          return;
-        }
-
-        emailError.style.display = "none";
-        emailInput.style.borderColor = "#d1d5db";
-
-        window.location.href = "main-interface.html";
-      });
-    </script>
+    <script src="login-page.js"></script>
   </body>
 </html>
