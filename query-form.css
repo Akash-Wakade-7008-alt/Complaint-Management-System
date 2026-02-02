@@ -213,6 +213,8 @@ textarea {
 
 .cancel {
   padding: 12px 20px;
+  height: 5.8vh;
+  cursor: pointer;
   border-radius: 8px;
   border: 1px solid #ccc;
   background: white;
@@ -225,6 +227,7 @@ textarea {
   background: #2563eb;
   color: white;
   cursor: pointer;
+  margin-bottom: 5vh;
 }
 
 .upload-box {
