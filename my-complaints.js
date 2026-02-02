@@ -77,7 +77,7 @@ const pageMap = {
   "CMP-003": "complaint-3.html",
   "CMP-004": "complaint-4.html",
   "CMP-005": "complaint-5.html",
-  // CMP-006
+  "CMP-006": "complaint-6.html",
 };
 
 // ------------------ DROPDOWN OPEN/CLOSE ------------------
