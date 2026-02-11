@@ -1,108 +1,101 @@
-<!-- Animated Header -->
+<!-- HERO BANNER -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:4F46E5,100:2563EB&height=200&section=header&text=Trident%20PG%20Complaint%20System&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=35"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,100:2563EB&height=230&section=header&text=Trident%20PG%20Complaint%20Management%20System&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=38"/>
 </p>
 
 <p align="center">
-  <b>A Modern Complaint Management Platform for PG Residents</b>
-</p>
-
----
-
-<p align="center">
-
-<img src="https://img.shields.io/badge/Status-Production--Ready-success?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Made%20With-HTML%20CSS%20JS-orange?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/UI-Clean%20%26%20Professional-blue?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Architecture-Scalable-purple?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Open%20Source-Yes-brightgreen?style=for-the-badge"/>
-
+  <b>A Production-Style Complaint Resolution Platform for Modern PG Living</b>
 </p>
 
 ---
 
-# 🚀 Trident PG Complaint Management System
-
-A **modern, fast, and intuitive Complaint Management System** built to simplify how PG residents report issues and how management tracks and resolves them.
-
-Designed with a strong focus on **user experience, structured architecture, and professional UI**, this project reflects real-world product design principles.
-
-> 💡 **Goal:** Eliminate unresolved complaints and improve resident satisfaction through transparency and tracking.
-
----
-
-# 🌟 Why This Project Stands Out
-
-Unlike basic academic projects, this system is designed like a **real SaaS product interface**.
-
-✅ Professional Dashboard  
-✅ Structured Multi-Page Architecture  
-✅ Modular Codebase  
-✅ Scalable Folder Design  
-✅ Clean UI Components  
-✅ Realistic Complaint Workflow  
-✅ Recruiter-Friendly Project Depth
-
-👉 This is the kind of project that makes your GitHub look **serious**.
+<p align="center">
+<img src="https://img.shields.io/badge/Architecture-Structured-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/UI-Professional-black?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Project%20Type-Product--Level-success?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Code-Modular-orange?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Maintained-Yes-brightgreen?style=for-the-badge"/>
+</p>
 
 ---
 
-# 🖥️ Live Preview
+# 🧠 Project Philosophy
 
-## 🏠 Landing Experience
+Most student projects demonstrate features.
 
+**This project demonstrates engineering maturity.**
+
+It is designed like a real internal product used by property managers — focusing on clarity, workflow efficiency, and structured user experience.
+
+> ⚡ **Mission:** Transform complaint handling from chaotic conversations into a transparent, trackable system.
+
+---
+
+# 🚀 What This Project Represents
+
+This is NOT just a frontend project.
+
+It signals that you understand:
+
+✅ Product Thinking  
+✅ User Flow Design  
+✅ Interface Hierarchy  
+✅ Modular Architecture  
+✅ Scalable Folder Structure  
+✅ Real-world Ticket Lifecycle  
+
+👉 These are the traits recruiters scan for in **strong internship candidates.**
+
+---
+
+# 🖥️ Interface Preview
+
+### 🏠 Landing Experience
 ![Landing](images/preview-1.png)
 
 ---
 
-## 🔐 Secure Login
-
+### 🔐 Authentication Portal
 ![Login](images/preview-2.png)
 
 ---
 
-## 📊 Smart Resident Dashboard
-
+### 📊 Resident Command Center
 ![Dashboard](images/preview-3.png)
 
 ---
 
-## 📝 Raise Complaints Effortlessly
-
-![Raise](images/preview-4.png)
-
----
-
-## 📌 Track Every Complaint
-
-![Track](images/preview-5.png)
+### 📝 Smart Complaint Submission
+![Raise Complaint](images/preview-4.png)
 
 ---
 
-# 🧠 System Capabilities
-
-### 👤 Resident Features
-
-✔ Create Account  
-✔ Secure Login  
-✔ Raise Complaints  
-✔ Attach Issue Details  
-✔ Track Status  
-✔ View Complaint History
+### 📌 Complaint Tracking System
+![Tracking](images/preview-5.png)
 
 ---
 
-### 🛠️ Complaint Lifecycle
+# ⚙️ Core Capabilities
+
+## Resident Journey
+
+**Create Account → Login → Raise Issue → Track Status → Resolution**
+
+Designed to mirror production-grade ticket systems.
+
+---
+
+## Complaint Lifecycle
 
 ```
 Pending → In Progress → Resolved
 ```
 
-Built to mirror real-world ticketing workflows.
+Clear state transitions improve transparency and trust.
 
 ---
 
-# 📂 Elite Folder Architecture
+# 🏗️ Architecture That Signals Serious Development
 
 ```
 Complaint-Management-System/
@@ -171,14 +164,30 @@ Complaint-Management-System/
 
 ---
 
-# ⚙️ Tech Stack
+# 🧰 Tech Stack
 
-| Technology            | Role                 |
-| --------------------- | -------------------- |
-| **HTML5**             | Semantic Structure   |
-| **CSS3**              | Modern UI Styling    |
-| **JavaScript**        | Dynamic Behavior     |
-| **Responsive Design** | Multi-Device Support |
+| Layer | Technology |
+|--------|------------|
+| Structure | **HTML5** |
+| Styling | **CSS3** |
+| Logic | **JavaScript** |
+| Design Approach | **Responsive UI** |
+
+---
+
+# 🎯 Why Recruiters Like Projects Like This
+
+Because it demonstrates **readiness for team environments.**
+
+You show:
+
+✔ Organized code  
+✔ Naming discipline  
+✔ Separation of concerns  
+✔ Interface planning  
+✔ Workflow modeling  
+
+👉 This removes the “beginner” label instantly.
 
 ---
 
@@ -194,67 +203,55 @@ open index.html
 
 ---
 
-# 🔥 What Makes This Recruiter-Attractive?
+# 🔮 Future Evolution (Senior-Level Upgrades)
 
-Most student projects show CRUD.
+Want to transform this into a portfolio centerpiece?
 
-**This project shows PRODUCT THINKING.**
+Add:
 
-✔ Logical user flow  
-✔ Real interface patterns  
-✔ Organized architecture  
-✔ Scalable structure  
-✔ Strong UI discipline
-
-👉 Signals that you are ready for **internships and serious dev work.**
-
----
-
-# 🧭 Future Roadmap
-
-✅ Admin Panel  
-✅ Backend Integration (Node / Firebase)  
+✅ Backend (Node / Express)  
+✅ Database (MongoDB / PostgreSQL)  
 ✅ Authentication  
-✅ Email Alerts  
-✅ Complaint Analytics  
 ✅ Role-Based Access  
-✅ Dark Mode  
-✅ Mobile App Version
+✅ Admin Dashboard  
+✅ Real-time Notifications  
+✅ File Upload Storage  
+✅ Analytics  
+
+👉 Do this, and the project jumps from **student → engineer tier.**
 
 ---
 
-# 🤝 Contributing
+# 🤝 Contributions
 
-Contributions elevate projects from good → great.
+Great systems are built collaboratively.
+
+If you have ideas for improvement:
 
 ```
-Fork → Improve → Pull Request
+Fork → Enhance → Pull Request
 ```
-
-All ideas are welcome!
 
 ---
 
-# ⭐ Show Your Support
+# ⭐ Support The Project
 
-If this project helped you or inspired you:
+If this repository impressed you:
 
-👉 Drop a ⭐ on the repository.
+Give it a ⭐
 
-It genuinely motivates further development.
+It helps the project grow and motivates continued development.
 
 ---
 
 # 👨‍💻 Author
 
-## **Akash Wakade**
-
-> Aspiring Software Engineer | Building Real-World Projects
-
-Passionate about creating systems that solve real problems and deliver exceptional user experiences.
+## Akash Wakade
+**Aspiring Software Engineer — Focused on Building Real Systems, Not Just Projects.**
 
 ---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2563EB,100:4F46E5&height=120&section=footer"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2563EB,100:0F172A&height=140&section=footer"/>
 </p>
+
