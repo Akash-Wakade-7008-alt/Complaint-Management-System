@@ -51,31 +51,41 @@ Unlike basic academic projects, this system is designed like a **real SaaS produ
 
 ## 🏠 Landing Experience
 
-![Landing](images/preview-1.png)
+<p align="center">
+  <img src="Preview-1.png" width="100%" alt="Landing Page"/>
+</p>
 
 ---
 
 ## 🔐 Secure Login
 
-![Login](images/preview-2.png)
+<p align="center">
+  <img src="Preview-2.png" width="100%" alt="Login Page"/>
+</p>
 
 ---
 
 ## 📊 Smart Resident Dashboard
 
-![Dashboard](images/preview-3.png)
+<p align="center">
+  <img src="Preview-3.png" width="100%" alt="Dashboard"/>
+</p>
 
 ---
 
 ## 📝 Raise Complaints Effortlessly
 
-![Raise](images/preview-4.png)
+<p align="center">
+  <img src="Preview-4.png" width="100%" alt="Raise Complaint"/>
+</p>
 
 ---
 
 ## 📌 Track Every Complaint
 
-![Track](images/preview-5.png)
+<p align="center">
+  <img src="Preview-5.png" width="100%" alt="My Complaints"/>
+</p>
 
 ---
 
@@ -247,19 +257,24 @@ It genuinely motivates further development.
 
 # 👨‍💻 Authors
 
-## Akash Wakade  
+## Akash Wakade
+
 **Project Lead & Developer**
 
-## Shruti  
+## Shruti
+
 **Frontend Contributor**
 
-## Anhadh  
+## Anhadh
+
 **UI/UX Contributor**
 
-## Aparna  
+## Aparna
+
 **Testing & Feedback**
 
-## Amrita  
+## Amrita
+
 **Documentation Support**
 
 ---
