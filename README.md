@@ -1,4 +1,3 @@
-<!-- Animated Header -->
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:4F46E5,100:2563EB&height=200&section=header&text=Trident%20PG%20Complaint%20System&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=35"/>
 </p>
@@ -112,7 +111,7 @@ Built to mirror real-world ticketing workflows.
 
 ---
 
-# 📂 Elite Folder Architecture
+# 📂 Project Structure
 
 ```
 Complaint-Management-System/
@@ -204,22 +203,6 @@ open index.html
 
 ---
 
-# 🔥 What Makes This Recruiter-Attractive?
-
-Most student projects show CRUD.
-
-**This project shows PRODUCT THINKING.**
-
-✔ Logical user flow  
-✔ Real interface patterns  
-✔ Organized architecture  
-✔ Scalable structure  
-✔ Strong UI discipline
-
-👉 Signals that you are ready for **internships and serious dev work.**
-
----
-
 # 🧭 Future Roadmap
 
 ✅ Admin Panel  
@@ -276,9 +259,3 @@ It genuinely motivates further development.
 ## Amrita
 
 **Documentation Support**
-
----
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2563EB,100:4F46E5&height=120&section=footer"/>
-</p>
