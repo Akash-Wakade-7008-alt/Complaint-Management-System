@@ -240,7 +240,7 @@ It genuinely motivates further development.
 
 # 👨‍💻 Authors
 
-## Akash Wakade
+## Akash 
 
 **Project Lead & Developer**
 
