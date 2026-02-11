@@ -42,8 +42,6 @@ Unlike basic academic projects, this system is designed like a **real SaaS produ
 ✅ Realistic Complaint Workflow  
 ✅ Recruiter-Friendly Project Depth
 
-👉 This is the kind of project that makes your GitHub look **serious**.
-
 ---
 
 # 🖥️ Live Preview
@@ -240,7 +238,7 @@ It genuinely motivates further development.
 
 # 👨‍💻 Authors
 
-## Akash 
+## Akash
 
 **Project Lead & Developer**
 
