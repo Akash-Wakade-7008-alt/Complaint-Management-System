@@ -29,6 +29,10 @@ body {
   color: #fff;
 }
 
+.btn.primary:hover {
+  background: #1e4ed8;
+}
+
 .btn.outline {
   background: #fff;
   border: 1px solid #e2e8f0;
