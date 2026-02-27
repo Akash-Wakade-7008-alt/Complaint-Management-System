@@ -1,4 +1,4 @@
-// ------------------ DATA ------------------
+
 const complaints = [
   {
     id: "CMP-001",
@@ -56,7 +56,6 @@ const complaints = [
   },
 ];
 
-// ------------------ DOM ------------------
 const cardsContainer = document.getElementById("cardsContainer");
 const footerText = document.getElementById("footerText");
 
@@ -70,7 +69,6 @@ const categoryMenu = document.getElementById("categoryMenu");
 let selectedStatus = "all";
 let selectedCategory = "all";
 
-// ------------------ REDIRECT MAP ------------------
 const pageMap = {
   "CMP-001": "complaint-1.html",
   "CMP-002": "complaint-2.html",
@@ -80,7 +78,6 @@ const pageMap = {
   "CMP-006": "complaint-6.html",
 };
 
-// ------------------ DROPDOWN OPEN/CLOSE ------------------
 statusBtn.addEventListener("click", () => {
   toggleMenu(statusMenu);
   categoryMenu.style.display = "none";
@@ -95,7 +92,7 @@ function toggleMenu(menu) {
   menu.style.display = menu.style.display === "block" ? "none" : "block";
 }
 
-// close menus when clicking outside
+
 document.addEventListener("click", (e) => {
   const clickedInsideStatus =
     statusBtn.contains(e.target) || statusMenu.contains(e.target);
@@ -106,7 +103,7 @@ document.addEventListener("click", (e) => {
   if (!clickedInsideCategory) categoryMenu.style.display = "none";
 });
 
-// ------------------ MENU OPTIONS ------------------
+
 statusMenu.querySelectorAll(".option").forEach((opt) => {
   opt.addEventListener("click", () => {
     selectedStatus = opt.dataset.value; // all / pending / in progress / resolved
@@ -125,10 +122,10 @@ categoryMenu.querySelectorAll(".option").forEach((opt) => {
   });
 });
 
-// ------------------ SEARCH ------------------
+
 searchInput.addEventListener("input", renderCards);
 
-// ------------------ HELPERS ------------------
+
 function getStatusClass(statusText) {
   const s = statusText.toLowerCase();
   if (s === "pending") return "status-pending";
@@ -136,7 +133,7 @@ function getStatusClass(statusText) {
   return "status-resolved";
 }
 
-// ------------------ RENDER CARDS ------------------
+
 function renderCards() {
   const search = searchInput.value.trim().toLowerCase();
 
@@ -184,7 +181,7 @@ function renderCards() {
       <div class="arrow">→</div>
     `;
 
-    // ✅ CLICK REDIRECT ONLY FOR CMP-001 to CMP-005
+    // CLICK REDIRECT ONLY FOR CMP-001 to CMP-005
     if (pageMap[c.id]) {
       card.style.cursor = "pointer";
       card.title = "Click to view complaint details";
