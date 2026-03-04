@@ -153,7 +153,6 @@ main {
   margin-left: 4vw;
   cursor: pointer;
   transform: scale(1) translateY(0px);
-
   transition: transform 1s ease;
   transform-origin: center;
 }
