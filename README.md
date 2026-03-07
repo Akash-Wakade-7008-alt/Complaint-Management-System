@@ -117,65 +117,74 @@ Built to mirror real-world ticketing workflows.
 Complaint-Management-System/
 │
 ├── index.html
+├── README.md
+├── pg-logo.ico
 │
-├── src/
+├── assets/
+│   └── images/
+│       ├── dashboard-blue-img.png
+│       ├── dashboard-img.png
+│       ├── In-Progress-img.png
+│       ├── In-Progress-2-img.png
+│       ├── Pending-img.png
+│       ├── Pending-2-img.png
+│       ├── my-complaint-img.png
+│       ├── my-complaint-blue-img.png
+│       ├── my-complaints-blue-img.png
+│       ├── notification-img.png
+│       ├── raise-complaint.png
+│       ├── raise-complaint-blue-img.png
+│       ├── Resident.png
+│       ├── Logout.png
+│       ├── Left-head-arrow.png
+│       ├── Resolved-2-img.png
+│       │
+│       └── previews/
+│           ├── Preview-1.png
+│           ├── Preview-2.png
+│           ├── Preview-3.png
+│           ├── Preview-4.png
+│           └── Preview-5.png
+│
+├── css/
 │   ├── style.css
-│   ├── script.js
-│
-│   ├── login-page.html
-│   ├── login-page.css
-│   ├── login-page.js
-│
-│   ├── create-account.html
-│   ├── create-account.css
-│   ├── create-account.js
-│
-│   ├── main-interface.html
 │   ├── main-interface.css
-│
-│   ├── my-complaints.html
+│   ├── login-page.css
+│   ├── create-account.css
 │   ├── my-complaints.css
-│   ├── my-complaints.js
-│
-│   ├── query-form.html
 │   ├── query-form.css
-│   ├── query-form.js
+│   │
+│   └── complaints/
+│       ├── complaint-1.css
+│       ├── complaint-2.css
+│       ├── complaint-3.css
+│       ├── complaint-4.css
+│       ├── complaint-5.css
+│       └── complaint-6.css
 │
-│   ├── complaint-1.html
-│   ├── complaint-1.css
-│   ├── complaint-2.html
-│   ├── complaint-2.css
-│   ├── complaint-3.html
-│   ├── complaint-3.css
-│   ├── complaint-4.html
-│   ├── complaint-4.css
-│   ├── complaint-5.html
-│   ├── complaint-5.css
-│   ├── complaint-6.html
-│   ├── complaint-6.css
+├── js/
+│   ├── script.js
+│   ├── login-page.js
+│   ├── create-account.js
+│   ├── my-complaints.js
+│   └── query-form.js
 │
-├── images/
-│   ├── dashboard-blue-img.png
-│   ├── dashboard-img.png
-│   ├── In-progress-2-img.png
-│   ├── In-progress-img.png
-│   ├── Left-head-arrow.png
-│   ├── my-complaint-blue-img.png
-│   ├── my-complaints-img.png
-│   ├── notification-img.png
-│   ├── pending-2-img.png
-│   ├── pending-img.png
-│   ├── pg-logo.png
-│   ├── raise-complaint.png
-│   ├── raise-complaint-blue.png
-│   ├── resident.png
-│   ├── resolved-2-img.png
-│   ├── resolved.png
-│   ├── preview-1.png
-│   ├── preview-2.png
-│   ├── preview-3.png
-│   ├── preview-4.png
-│   └── preview-5.png
+├── pages/
+│   ├── login-page.html
+│   ├── create-account.html
+│   ├── main-interface.html
+│   ├── my-complaints.html
+│   ├── query-form.html
+│   │
+│   └── complaints/
+│       ├── complaint-1.html
+│       ├── complaint-2.html
+│       ├── complaint-3.html
+│       ├── complaint-4.html
+│       ├── complaint-5.html
+│       └── complaint-6.html
+│
+└── .vscode/
 ```
 
 ---
