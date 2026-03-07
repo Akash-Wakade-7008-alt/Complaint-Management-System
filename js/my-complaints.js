@@ -70,12 +70,12 @@ let selectedStatus = "all";
 let selectedCategory = "all";
 
 const pageMap = {
-  "CMP-001": "complaint-1.html",
-  "CMP-002": "complaint-2.html",
-  "CMP-003": "complaint-3.html",
-  "CMP-004": "complaint-4.html",
-  "CMP-005": "complaint-5.html",
-  "CMP-006": "complaint-6.html",
+  "CMP-001": "../pages/complaints/complaint-1.html",
+  "CMP-002": "../pages/complaints/complaint-2.html",
+  "CMP-003": "../pages/complaints/complaint-3.html",
+  "CMP-004": "../pages/complaints/complaint-4.html",
+  "CMP-005": "../pages/complaints/complaint-5.html",
+  "CMP-006": "../pages/complaints/complaint-6.html",
 };
 
 statusBtn.addEventListener("click", () => {
