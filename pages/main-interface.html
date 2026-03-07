@@ -1,265 +1,332 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main-Interface</title>
-    <link rel="stylesheet" href="main-interface.css">
-     <link
-      rel="shortcut icon"
-      href="./pg-logo.ico"
-      type="image/x-icon"
-    />
-    </link>
+    <link rel="stylesheet" href="../css/main-interface.css">
+    <link rel="shortcut icon" href="../assets/images/pg-logo.ico" type="image/x-icon">
 </head>
 
 <body>
 
-    <header>
+<header>
 
-        <img src="./pg-logo.png" alt="Pg-logo" style="height: 8vh;">
-        <h2 style="margin-left: 1vw;">Trident PG Complaint</h2>
-        <img src="notification-img.png" alt="nitification-img"
-            style="height: 6vh;margin-left: 71vw;margin-top: 0.5vh;cursor: pointer;">
+<img src="../assets/images/pg-logo.png" alt="Pg-logo" style="height: 8vh;">
+<h2 style="margin-left: 1vw;">Trident PG Complaint</h2>
 
-    </header>
+<img src="../assets/images/notification-img.png"
+alt="notification-img"
+style="height: 6vh;margin-left: 71vw;margin-top: 0.5vh;cursor: pointer;">
 
+</header>
 
+<main>
 
-    <main>
+<section id="section-1">
 
-        <section id="section-1">
+<div class="dashboard">
 
-            <div class="dashboard">
+<img src="../assets/images/dashboard-blue-img.png" alt="dashboard" id="dashboard-img">
+<p style="margin-top: 3vh;margin-left: 0.5vw;font-size: large;">Dashboard</p>
 
-                <img src="dashboard-blue-img.png" alt="dashboard" id="dashboard-img">
-                <p style="margin-top: 3vh;margin-left: 0.5vw;font-size: large;">Dashboard</p>
-            </div>
+</div>
 
-            <a href="query-form.html" target="_blank" style="text-decoration: none;color: black;">
-                <div class="Raise-Complaint">
+<a href="query-form.html" style="text-decoration: none;color: black;">
 
-                    <img src="./raise-complaint.png" alt="Raise-Complait" id="Raise-Complaint-img">
-                    <p style="margin-top: 3vh;margin-left: 0.5vw;font-size: large;">Raise Complaint</p>
-                </div>
-            </a>
+<div class="Raise-Complaint">
 
-            <a href="my-complaints.html" class="My-Complaint" target="_blank">
+<img src="../assets/images/raise-complaint.png"
+alt="Raise-Complaint"
+id="Raise-Complaint-img">
 
-                <img src="my-complaint-img.png" alt="My-Complint" id="My-Complaint-img">
-                <p style="margin-top: 3vh;margin-left: 0.5vw;font-size: large;">My Complaint</p>
-            </a>
+<p style="margin-top: 3vh;margin-left: 0.5vw;font-size: large;">Raise Complaint</p>
 
+</div>
 
-            <div style="display: flex;margin-top:43vh;margin-left: 1.5vw;">
-                <img src="Resident.png" alt="Resident" class="Resident-img">
-                <div>
-                    <p style="font-size: 12px;height: 2px;margin-top: 5vh; margin-left: 1vw;">Yash</p>
-                    <p style="font-size: 12px;margin-left: 1vw;">resident</p>
-                </div>
+</a>
 
-            </div>
+<a href="my-complaints.html" class="My-Complaint">
 
+<img src="../assets/images/my-complaint-img.png"
+alt="My-Complaint"
+id="My-Complaint-img">
 
-            <a href="index.html" target="_blank" style="text-decoration: none;color: black;">
-                <div style="display: flex;margin-left: 1vw;">
-                    <img src="Logout.png" alt="log-out" clas="log-out">
-                    <p style="font-size: small;margin-top: 3vh;">Logout</p>
-                </div>
-            </a>
+<p style="margin-top: 3vh;margin-left: 0.5vw;font-size: large;">My Complaint</p>
 
-        </section>
+</a>
 
+<div style="display: flex;margin-top:43vh;margin-left: 1.5vw;">
 
+<img src="../assets/images/Resident.png" alt="Resident" class="Resident-img">
 
-        <section id="section-2">
+<div>
+<p style="font-size: 12px;height: 2px;margin-top: 5vh; margin-left: 1vw;">Yash</p>
+<p style="font-size: 12px;margin-left: 1vw;">resident</p>
+</div>
 
-            <div style="display: flex;justify-content: space-between;">
+</div>
 
-                <div>
-                    <p style="font-size: 35px;height: 2vh;">Welcome back,Atharv!</p>
-                    <p>Here's what's happening with your complaint</p>
-                </div>
+<a href="index.html" style="text-decoration: none;color: black;">
 
-                <a href="query-form.html" target="_blank" style="text-decoration: none;">
+<div style="display: flex;margin-left: 1vw;">
 
-                    <button class="complaint-btn">
-                        <img src="raise-complaint-blue-img.png" class="Raise-Complaint-img-blue">
-                        <p style="margin-top: 1.5vh;">Raise Complaint</p>
-                    </button>
-                </a>
-            </div>
+<img src="../assets/images/Logout.png" alt="log-out" class="log-out">
 
-            <div class="complaint-status">
+<p style="font-size: small;margin-top: 3vh;">Logout</p>
 
-                <div class="card-1">
-                    <img src="my-complaint-blue-img.png" class="My-Complaint-blue-img">
-                    <p style="margin-left: 3vw;">Total Complaints</p>
-                    <h1 style="margin-left: 3vw;">12</h1>
-                </div>
+</div>
 
+</a>
 
+</section>
 
+<section id="section-2">
 
-                <div class="complaint-status-card card-2">
-                    <img src="Pending-img.png" class="pending-img">
-                    <p style="margin-left: 3vw;">Pending</p>
-                    <h1 style="margin-left: 3vw;">3</h1>
-                </div>
+<div style="display: flex;justify-content: space-between;">
 
+<div>
+<p style="font-size: 35px;height: 2vh;">Welcome back,Atharv!</p>
+<p>Here's what's happening with your complaint</p>
+</div>
 
+<a href="query-form.html" style="text-decoration: none;">
 
+<button class="complaint-btn">
 
-                <div class="complaint-status-card card-3">
-                    <img src="In-Progress-img.png" class="In-Progress-img">
-                    <p style="margin-left: 3vw;">In Progress</p>
-                    <h1 style="margin-left: 3vw;">5</h1>
-                </div>
+<img src="../assets/images/raise-complaint-blue-img.png"
+class="Raise-Complaint-img-blue">
 
+<p style="margin-top: 1.5vh;">Raise Complaint</p>
 
+</button>
 
+</a>
 
-                <div class="complaint-status-card card-4">
-                    <img src="Resolved.png" class="Resolved-img">
-                    <p style="margin-left: 3vw;">Resolved</p>
-                    <h1 style="margin-left: 3vw;">5</h1>
-                </div>
+</div>
 
+<div class="complaint-status">
 
+<div class="card-1">
 
+<img src="../assets/images/my-complaint-blue-img.png"
+class="My-Complaint-blue-img">
 
-            </div>
+<p style="margin-left: 3vw;">Total Complaints</p>
+<h1 style="margin-left: 3vw;">12</h1>
 
+</div>
 
-            <div style="display: flex;margin-top: 5vh;justify-content: space-between;">
+<div class="complaint-status-card card-2">
 
-                <div>
-                    <h2 style="height: 2.5vh;margin-top: 10vh;">Recent Complaints</h2>
-                    <p>Your Latest Submitted Complaints </p>
-                </div>
+<img src="../assets/images/Pending-img.png"
+class="pending-img">
 
-                <a href="my-complaints.html">
-                    <button class="view-all-btn">
-                        <p>View All</p>
-                    </button>
+<p style="margin-left: 3vw;">Pending</p>
+<h1 style="margin-left: 3vw;">3</h1>
 
-                </a>
+</div>
 
-            </div>
+<div class="complaint-status-card card-3">
 
+<img src="../assets/images/In-Progress-img.png"
+class="In-Progress-img">
 
+<p style="margin-left: 3vw;">In Progress</p>
+<h1 style="margin-left: 3vw;">5</h1>
 
+</div>
 
+<div class="complaint-status-card card-4">
 
-            <div class="Resent-Complaints">
+<img src="../assets/images/Resolved.png"
+class="Resolved-img">
 
+<p style="margin-left: 3vw;">Resolved</p>
+<h1 style="margin-left: 3vw;">5</h1>
 
-                <nav>
-                    <a href="complaint-1.html" target="_blank" style="text-decoration: none;color: black;">
-                        <div class="CMP-001">
-                            <img src="Left-head-arrow.png" style="float: right;height: 5vh;margin-right: 3vw;">
-                            <div style="display: flex;">
-                                <img src="Pending-2-img.png" class="pending-2-img">
-                                <div>
-                                    <div style="display: flex;gap: 2vw;height: 4vh;">
-                                        <p>CMP-001</p>
-                                        <p
-                                            style="color: rgba(141, 80, 26, 0.829);font-weight: bold;background-color: rgb(246, 241, 179);height: 2.5vh;border-radius: 10px;width: 5vw;padding: 3px;">
-                                            Pending</p>
-                                    </div>
-                                    <h2 style="height: 2vh;">Water heater not working</h2>
-                                    <p>Water.Jan 8, 2026</p>
-                                </div>
+</div>
 
-                            </div>
+</div>
 
-                        </div>
+<div style="display: flex;margin-top: 5vh;justify-content: space-between;">
 
+<div>
+<h2 style="height: 2.5vh;margin-top: 10vh;">Recent Complaints</h2>
+<p>Your Latest Submitted Complaints</p>
+</div>
 
-                    </a>
+<a href="my-complaints.html">
 
-                    <a href="complaint-2.html" target="_blank" style="text-decoration: none;color: black;">
-                        <div class="CMP-002">
-                            <img src="Left-head-arrow.png" style="float: right;height: 5vh;margin-right: 3vw;">
-                            <div style="display: flex;">
-                                <img src="In-Progress-2-img.png" class="In-Progress-2-img">
-                                <div>
-                                    <div style="display: flex;gap: 2vw;height: 4vh;">
-                                        <p>CMP-002</p>
-                                        <p
-                                            style="color: rgb(8, 94, 242);font-weight: bold;background-color: rgb(206, 227, 247);height: 2.5vh;border-radius: 10px;padding: 3px;">
-                                            In Progress</p>
-                                    </div>
-                                    <h2 style="height: 2vh;">Wifi connectivity issue </h2>
-                                    <p>Internet.Jan 7, 2026</p>
-                                </div>
+<button class="view-all-btn">
+<p>View All</p>
+</button>
 
-                            </div>
+</a>
 
-                        </div>
+</div>
 
-                    </a>
+<div class="Resent-Complaints">
 
+<nav>
 
-                    <a href="complaint-3.html" target="_blank" style="text-decoration: none;color: black;">
-                        <div class="CMP-003">
-                            <img src="Left-head-arrow.png" style="float: right;height: 5vh;margin-right: 3vw;">
-                            <div style="display: flex;">
-                                <img src="Resolved-2-img.png" class="Resolved-2-img">
-                                <div>
-                                    <div style="display: flex;gap: 2vw;height: 4vh;">
-                                        <p>CMP-003</p>
-                                        <p
-                                            style="color: rgb(34, 109, 6);font-weight: bold;background-color: rgb(221, 245, 226);height: 2.5vh;border-radius: 10px;padding: 3px;">
-                                            Resolved</p>
-                                    </div>
-                                    <h2 style="height: 2vh;">Room Cleaning not done</h2>
-                                    <p>Water.Jan 8, 2026</p>
-                                </div>
+<a href="complaint-1.html" style="text-decoration: none;color: black;">
 
-                            </div>
+<div class="CMP-001">
 
-                        </div>
-                    </a>
+<img src="../assets/images/Left-head-arrow.png"
+style="float: right;height: 5vh;margin-right: 3vw;">
 
-                </nav>
-            </div>
+<div style="display: flex;">
 
-            <footer>
+<img src="../assets/images/Pending-2-img.png"
+class="pending-2-img">
 
+<div>
 
+<div style="display: flex;gap: 2vw;height: 4vh;">
 
-                <div class="need-help-div">
+<p>CMP-001</p>
 
-                    <p>Need help ?</p>
-                    <p style="margin-top: 5vh;height: 1vh;">Having trouble with the system? Contact our support </p>
-                    <p> team for assistance</p>
-                    <p style="margin-top: 3vh;">Contact Support</p>
-                </div>
+<p style="color: rgba(141, 80, 26, 0.829);
+font-weight: bold;
+background-color: rgb(246, 241, 179);
+height: 2.5vh;
+border-radius: 10px;
+width: 5vw;
+padding: 3px;">
 
-                <div class="Quick-Tip-div">
-                    <p style="height: 2vh;">Quick Tip</p>
-                    <p style="margin-top: 5vh;height: 1vh;">Add images to your Compalints for faster resolution.</p>
-                    <p>Visual evidence helps the staff understand issue better.</p>
+Pending
 
+</p>
 
-                </div>
+</div>
 
+<h2 style="height: 2vh;">Water heater not working</h2>
+<p>Water.Jan 8, 2026</p>
 
-            </footer>
+</div>
 
+</div>
 
-        </section>
+</div>
 
+</a>
 
-    </main>
+<a href="complaint-2.html" style="text-decoration: none;color: black;">
 
+<div class="CMP-002">
 
+<img src="../assets/images/Left-head-arrow.png"
+style="float: right;height: 5vh;margin-right: 3vw;">
 
+<div style="display: flex;">
 
+<img src="../assets/images/In-Progress-2-img.png"
+class="In-Progress-2-img">
 
+<div>
+
+<div style="display: flex;gap: 2vw;height: 4vh;">
+
+<p>CMP-002</p>
+
+<p style="color: rgb(8, 94, 242);
+font-weight: bold;
+background-color: rgb(206, 227, 247);
+height: 2.5vh;
+border-radius: 10px;
+padding: 3px;">
+
+In Progress
+
+</p>
+
+</div>
+
+<h2 style="height: 2vh;">Wifi connectivity issue</h2>
+<p>Internet.Jan 7, 2026</p>
+
+</div>
+
+</div>
+
+</div>
+
+</a>
+
+<a href="complaint-3.html" style="text-decoration: none;color: black;">
+
+<div class="CMP-003">
+
+<img src="../assets/images/Left-head-arrow.png"
+style="float: right;height: 5vh;margin-right: 3vw;">
+
+<div style="display: flex;">
+
+<img src="../assets/images/Resolved-2-img.png"
+class="Resolved-2-img">
+
+<div>
+
+<div style="display: flex;gap: 2vw;height: 4vh;">
+
+<p>CMP-003</p>
+
+<p style="color: rgb(34, 109, 6);
+font-weight: bold;
+background-color: rgb(221, 245, 226);
+height: 2.5vh;
+border-radius: 10px;
+padding: 3px;">
+
+Resolved
+
+</p>
+
+</div>
+
+<h2 style="height: 2vh;">Room Cleaning not done</h2>
+<p>Water.Jan 8, 2026</p>
+
+</div>
+
+</div>
+
+</div>
+
+</a>
+
+</nav>
+
+</div>
+
+<footer>
+
+<div class="need-help-div">
+
+<p>Need help ?</p>
+<p style="margin-top: 5vh;height: 1vh;">Having trouble with the system? Contact our support</p>
+<p>team for assistance</p>
+<p style="margin-top: 3vh;">Contact Support</p>
+
+</div>
+
+<div class="Quick-Tip-div">
+
+<p style="height: 2vh;">Quick Tip</p>
+<p style="margin-top: 5vh;height: 1vh;">Add images to your complaints for faster resolution.</p>
+<p>Visual evidence helps the staff understand issue better.</p>
+
+</div>
+
+</footer>
+
+</section>
+
+</main>
 
 </body>
-
 </html>
