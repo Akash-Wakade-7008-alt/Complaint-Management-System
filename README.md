@@ -51,7 +51,7 @@ Unlike basic academic projects, this system is designed like a **real SaaS produ
 ## 🏠 Landing Experience
 
 <p align="center">
-  <img src="Preview-1.png" width="100%" alt="Landing Page"/>
+  <img src="./assets/images/previews/Preview-1.png" width="100%" alt="Landing Page"/>
 </p>
 
 ---
@@ -59,7 +59,7 @@ Unlike basic academic projects, this system is designed like a **real SaaS produ
 ## 🔐 Secure Login
 
 <p align="center">
-  <img src="Preview-2.png" width="100%" alt="Login Page"/>
+  <img src="./assets/images/previews/Preview-2.png" width="100%" alt="Login Page"/>
 </p>
 
 ---
@@ -67,7 +67,7 @@ Unlike basic academic projects, this system is designed like a **real SaaS produ
 ## 📊 Smart Resident Dashboard
 
 <p align="center">
-  <img src="Preview-3.png" width="100%" alt="Dashboard"/>
+  <img src="./assets/images/previews/Preview-3.png" width="100%" alt="Dashboard"/>
 </p>
 
 ---
@@ -75,7 +75,7 @@ Unlike basic academic projects, this system is designed like a **real SaaS produ
 ## 📝 Raise Complaints Effortlessly
 
 <p align="center">
-  <img src="Preview-4.png" width="100%" alt="Raise Complaint"/>
+  <img src="./assets/images/previews/Preview-4.png" width="100%" alt="Raise Complaint"/>
 </p>
 
 ---
@@ -83,7 +83,7 @@ Unlike basic academic projects, this system is designed like a **real SaaS produ
 ## 📌 Track Every Complaint
 
 <p align="center">
-  <img src="Preview-5.png" width="100%" alt="My Complaints"/>
+  <img src="./assets/images/previews/Preview-5.png" width="100%" alt="My Complaints"/>
 </p>
 
 ---
