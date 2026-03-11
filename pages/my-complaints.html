@@ -1,298 +1,204 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>My Complaints</title>
-
-<link rel="stylesheet" href="../css/my-complaints.css" />
-
-<link
-rel="shortcut icon"
-href="../assets/images/pg-logo.ico"
-type="image/x-icon"
-/>
-
-</head>
-
-<body>
-
-<header>
-
-<img
-src="../assets/images/pg-logo.png"
-alt="Pg-logo"
-style="height: 8vh; margin-top: 1vh; margin-left: 1vw"
-/>
-
-<h2 style="margin-left: 1vw; margin-top: 2.7vh">
-Trident PG Complaints
-</h2>
-
-<img
-src="../assets/images/notification-img.png"
-alt="notification-img"
-style="
-height: 6vh;
-margin-left: 65.5vw;
-margin-top: 0.7vh;
-cursor: pointer;
-"
-/>
-
-</header>
-
-<main>
-
-<section id="section-1">
-
-<a
-href="main-interface.html"
-style="text-decoration: none; color: black"
-
->
-
-<div class="dashboard">
-
-<img
-src="../assets/images/dashboard-img.png"
-alt="dashboard"
-id="dashboard-img"
-/>
-
-<p style="margin-top: 3vh; margin-left: 0.5vw; font-size: large">
-Dashboard
-</p>
-
-</div>
-
-</a>
-
-<a
-href="query-form.html"
-style="text-decoration: none; color: black"
-
->
-
-<div style="display: flex; margin-left: 1vw">
-
-<img
-src="../assets/images/raise-complaint.png"
-alt="Raise-Complaint"
-id="Raise-Complaint-img"
-/>
-
-<p style="margin-top: 2.5vh; margin-left: 0.5vw; font-size: large">
-Raise Complaint
-</p>
-
-</div>
-
-</a>
-
-<div
-style="
-display: flex;
-margin-left: 1vw;
-background-color: rgb(36, 106, 219);
-justify-content: start;
-align-items: center;
-height: 6.5vh;
-width: 20vw;
-border-radius: 12px;
-border: none;
-margin-top: 1vh;
-margin-left: 0.3vw;
-color: rgb(255, 255, 255);
-cursor: pointer;
-"
->
-
-<img
-src="../assets/images/my-complaints-blue-img.png"
-alt="My-Complaint"
-id="My-Complaint-img"
-class="My-Complaint-blue-img"
-/>
-
-<p style="margin-top: 3vh; margin-left: 0.5vw; font-size: large">
-My Complaint
-</p>
-
-</div>
-
-<div style="display: flex; margin-top: 43vh; margin-left: 1.5vw">
-
-<img
-src="../assets/images/Resident.png"
-alt="Resident"
-class="Resident-img"
-/>
-
-<div>
-
-<p
-style="
-font-size: 12px;
-height: 2px;
-margin-top: 5vh;
-margin-left: 1vw;
-"
->
-Yash
-</p>
-
-<p style="font-size: 12px; margin-left: 1vw">
-resident
-</p>
-
-</div>
-
-</div>
-
-<a
-href="index.html"
-style="text-decoration: none; color: black"
-
->
-
-<div style="display: flex; margin-left: 1vw">
-
-<img
-src="../assets/images/Logout.png"
-alt="log-out"
-class="log-out"
-/>
-
-<p style="font-size: small; margin-top: 2.7vh">
-Logout
-</p>
-
-</div>
-
-</a>
-
-</section>
-
-<section id="section-2">
-
-<div class="page-title">
-
-<div>
-
-<h1>My Complaints</h1>
-<p>View and track all your submitted complaints</p>
-
-</div>
-
-<a
-href="query-form.html"
-style="text-decoration: none"
-
->
-
-<button class="new-complaint-btn">
-+ New Complaint
-</button>
-
-</a>
-
-</div>
-
-<div class="filters">
-
-<div class="search-box">
-
-<span class="search-icon">🔍</span>
-
-<input
-type="text"
-id="searchInput"
-placeholder="Search by title or ID..."
-/>
-
-</div>
-
-<div class="dropdown">
-
-<button class="dropbtn" id="statusBtn">
-Status ▾
-</button>
-
-<div class="dropdown-content" id="statusMenu">
-
-<div class="option" data-value="all">
-All Status
-</div>
-
-<div class="option" data-value="pending">
-Pending
-</div>
-
-<div class="option" data-value="in progress">
-In Progress
-</div>
-
-<div class="option" data-value="resolved">
-Resolved
-</div>
-
-</div>
-
-</div>
-
-<div class="dropdown">
-
-<button class="dropbtn" id="categoryBtn">
-Categories ▾
-</button>
-
-<div class="dropdown-content" id="categoryMenu">
-
-<div class="option" data-value="all">
-All Categories
-</div>
-
-<div class="option" data-value="food">
-Food
-</div>
-
-<div class="option" data-value="cleaning">
-Cleaning
-</div>
-
-<div class="option" data-value="electricity">
-Electricity
-</div>
-
-<div class="option" data-value="water">
-Water
-</div>
-
-<div class="option" data-value="internet">
-Internet
-</div>
-
-<div class="option" data-value="other">
-Other
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div id="cardsContainer" class="cards"></div>
-
-<p class="footer-text" id="footerText"></p>
-
-</section>
-
-</main>
-
-<script src="../js/my-complaints.js"></script>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Complaints</title>
+
+    <link rel="stylesheet" href="../css/my-complaints.css" />
+
+    <link
+      rel="shortcut icon"
+      href="../assets/images/pg-logo.ico"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="../assets/images/pg-logo.png"
+        alt="Pg-logo"
+        style="height: 8vh; margin-top: 1vh; margin-left: 1vw"
+      />
+
+      <h2 style="margin-left: 1vw; margin-top: 2.7vh">Trident PG Complaints</h2>
+
+      <img
+        src="../assets/images/notification-img.png"
+        alt="notification-img"
+        style="
+          height: 6vh;
+          margin-left: 65.5vw;
+          margin-top: 0.7vh;
+          cursor: pointer;
+        "
+      />
+    </header>
+
+    <main>
+      <section id="section-1">
+        <a
+          href="main-interface.html"
+          style="text-decoration: none; color: black"
+        >
+          <div class="dashboard">
+            <img
+              src="../assets/images/dashboard-img.png"
+              alt="dashboard"
+              id="dashboard-img"
+            />
+
+            <p style="margin-top: 3vh; margin-left: 0.5vw; font-size: large">
+              Dashboard
+            </p>
+          </div>
+        </a>
+
+        <a href="query-form.html" style="text-decoration: none; color: black">
+          <div style="display: flex; margin-left: 1vw">
+            <img
+              src="../assets/images/raise-complaint.png"
+              alt="Raise-Complaint"
+              id="Raise-Complaint-img"
+            />
+
+            <p style="margin-top: 2.5vh; margin-left: 0.5vw; font-size: large">
+              Raise Complaint
+            </p>
+          </div>
+        </a>
+
+        <div
+          style="
+            display: flex;
+            margin-left: 1vw;
+            background-color: rgb(36, 106, 219);
+            justify-content: start;
+            align-items: center;
+            height: 6.5vh;
+            width: 20vw;
+            border-radius: 12px;
+            border: none;
+            margin-top: 1vh;
+            margin-left: 0.3vw;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+          "
+        >
+          <img
+            src="../assets/images/my-complaints-blue-img.png"
+            alt="My-Complaint"
+            id="My-Complaint-img"
+            class="My-Complaint-blue-img"
+          />
+
+          <p style="margin-top: 3vh; margin-left: 0.5vw; font-size: large">
+            My Complaint
+          </p>
+        </div>
+
+        <div style="display: flex; margin-top: 43vh; margin-left: 1.5vw">
+          <img
+            src="../assets/images/Resident.png"
+            alt="Resident"
+            class="Resident-img"
+          />
+
+          <div>
+            <p
+              style="
+                font-size: 12px;
+                height: 2px;
+                margin-top: 5vh;
+                margin-left: 1vw;
+              "
+            >
+              Yash
+            </p>
+
+            <p style="font-size: 12px; margin-left: 1vw">resident</p>
+          </div>
+        </div>
+
+        <a href="../index.html" style="text-decoration: none; color: black">
+          <div style="display: flex; margin-left: 1vw">
+            <img
+              src="../assets/images/Logout.png"
+              alt="log-out"
+              class="log-out"
+            />
+
+            <p style="font-size: small; margin-top: 2.7vh">Logout</p>
+          </div>
+        </a>
+      </section>
+
+      <section id="section-2">
+        <div class="page-title">
+          <div>
+            <h1>My Complaints</h1>
+            <p>View and track all your submitted complaints</p>
+          </div>
+
+          <a href="query-form.html" style="text-decoration: none">
+            <button class="new-complaint-btn">+ New Complaint</button>
+          </a>
+        </div>
+
+        <div class="filters">
+          <div class="search-box">
+            <span class="search-icon">🔍</span>
+
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search by title or ID..."
+            />
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn" id="statusBtn">Status ▾</button>
+
+            <div class="dropdown-content" id="statusMenu">
+              <div class="option" data-value="all">All Status</div>
+
+              <div class="option" data-value="pending">Pending</div>
+
+              <div class="option" data-value="in progress">In Progress</div>
+
+              <div class="option" data-value="resolved">Resolved</div>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn" id="categoryBtn">Categories ▾</button>
+
+            <div class="dropdown-content" id="categoryMenu">
+              <div class="option" data-value="all">All Categories</div>
+
+              <div class="option" data-value="food">Food</div>
+
+              <div class="option" data-value="cleaning">Cleaning</div>
+
+              <div class="option" data-value="electricity">Electricity</div>
+
+              <div class="option" data-value="water">Water</div>
+
+              <div class="option" data-value="internet">Internet</div>
+
+              <div class="option" data-value="other">Other</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="cardsContainer" class="cards"></div>
+
+        <p class="footer-text" id="footerText"></p>
+      </section>
+    </main>
+
+    <script src="../js/my-complaints.js"></script>
+  </body>
 </html>
