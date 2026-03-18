@@ -1,0 +1,254 @@
+body {
+  background: #f4f6f8;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  height: 2vh;
+  display: flex;
+}
+
+main {
+  display: flex;
+}
+
+#section-1 {
+  height: 80vh;
+  overflow-y: hidden;
+}
+
+#section-2 {
+  height: 91vh;
+  overflow-y: auto;
+}
+
+.dashboard {
+  font-size: larger;
+  display: flex;
+  margin-left: 1vw;
+  justify-content: start;
+  align-items: center;
+  height: 6.5vh;
+  width: 20vw;
+  border-radius: 12px;
+  border: none;
+  margin-top: -3.5vh;
+  margin-left: 1vw;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+#dashboard-img {
+  height: 4.5vh;
+  margin-top: 2.5vh;
+  border-radius: 10px;
+}
+
+.Raise-Complaint {
+  background-color: rgb(36, 106, 219);
+  border: none;
+  color: rgb(255, 255, 255);
+  height: 6vh;
+  width: 20vw;
+  font-size: 18px;
+  border-radius: 8px;
+  display: flex;
+  margin-top: 2vh;
+  margin-left: 1vw;
+  cursor: pointer;
+}
+
+#Raise-Complaint-img {
+  height: 4.5vh;
+  margin-top: 0.7vh;
+  margin-left: 0.2vw;
+  border-radius: 10px;
+}
+
+.My-Complaint {
+  display: flex;
+  margin-left: 1vw;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+#My-Complaint-img {
+  height: 4.5vh;
+  margin-top: 2vh;
+}
+
+.Resident-img {
+  height: 6vh;
+  margin-top: 4.8vh;
+  border-radius: 10px;
+}
+
+.log-out {
+  height: 8vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: #ffffff;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.logo {
+  margin-bottom: 30px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.menu-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  text-align: left;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.menu-btn:hover {
+  background: #2563eb;
+  color: white;
+}
+
+.menu-btn.active {
+  background: #2563eb;
+  color: white;
+}
+.menu-btn:active {
+  transform: scale(0.98);
+}
+
+.user {
+  position: absolute;
+  bottom: 20px;
+}
+
+.logout {
+  margin-top: 10px;
+  background: none;
+  border: none;
+  color: #2563eb;
+  cursor: pointer;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -2vh;
+  margin-top: 10vh;
+  cursor: pointer;
+}
+
+.notification {
+  background: red;
+  color: white;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 12px;
+}
+
+
+.form-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 70%;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  color: gray;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 120px;
+}
+
+.upload-box {
+  margin-top: 10px;
+  padding: 30px;
+  border: 2px dashed #ccc;
+  text-align: center;
+  border-radius: 10px;
+  color: gray;
+}
+
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.cancel {
+  padding: 12px 20px;
+  height: 5.8vh;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+.submit {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 5vh;
+}
+
+.upload-box {
+  cursor: pointer;
+  user-select: none;
+}
+
+.upload-box.dragover {
+  border-color: #2563eb;
+  background: #f3f7ff;
+}
+
+.file-info {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #111;
+}
+
+.error-msg {
+  margin-top: 12px;
+  color: #dc2626;
+  font-size: 14px;
+  min-height: 18px;
+}
