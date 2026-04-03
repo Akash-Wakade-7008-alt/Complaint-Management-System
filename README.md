@@ -202,14 +202,26 @@ Complaint-Management-System/
 
 # 🚀 Run Locally
 
+### Option 1: Clone the Repository
+
 ```bash
-git clone https://github.com/Akash-Wakade-7008-alt/Complaint-Management-System.git
+git clone https://github.com/Akash-Wakade-7008-alt/Guessor-Game.git
 
 cd complaint-management-system
 
 open index.html
 ```
 
+### 📦 Option 2: Download ZIP
+
+Download the project directly:  
+👉 https://github.com/Akash-Wakade-7008-alt/Complaint-Management-System/releases/download/complain-management-system.v1.0/Complaint-Management-System.zip
+
+1. Download the ZIP file  
+2. Extract it  
+3. Open `index.html` in your browser  
+
+---
 ---
 
 # 🧭 Future Roadmap
